@@ -1,0 +1,107 @@
+/* 
+- the font is the default sans-serif font-family
+- the darker color is the css default "teal"
+- the lighter color is the css default "yellowgreen"
+- the top shadow is the css default "lightgray"
+- the bottom shadow is rgb(0, 75, 75)
+- the only other colors are black and white
+- use this background size and image to get the dotted background on the top half 
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, yellowgreen 1px, rgba(0, 0, 0, 0) 1px); 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0px solid lightgray;
+    box-shadow: 0 0 20px lightgray;
+}
+
+header > h1 {
+    color: teal;
+    font-size: 28px;
+}
+
+nav {
+    color: teal;
+}
+
+nav a {
+    padding: 20px;
+}
+
+.top-background {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, yellowgreen 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.message-board {
+    border: 1px solid teal;
+    background-color: teal;
+    color: white;
+    margin: 20px auto;
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+
+.buttons {
+    background-color: yellowgreen;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 30px;
+}
+
+.bottom-background {
+    background-color: teal;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.image {
+    height: 175px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: teal;    
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > #bottom {
+    background-color: teal;
+    font-size: 16px;
+    padding: 20px;
+    text-align: left;
+    align-items: center;
+}
